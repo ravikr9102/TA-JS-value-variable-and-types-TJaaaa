@@ -16,7 +16,10 @@ alert(firstName);
 alert(lastName);
 firstName="John";
 lastName="Snow";
-alert(firstName+ " " +lastName);
+alert(firstName + lastName);
+const fullName = `${firstName}  ${lastName}`;
+
+//firstName + " " + lastname;
 
 // Declare three variables `name,` `newUser` and `isAdmin`.
 // Assign your name as the value of `name`.
@@ -25,7 +28,7 @@ alert(firstName+ " " +lastName);
 // Alert the values of all the three variables.
 
 let name = "Ravi";
-let newUser = "Ravi";
+let newUser = "name";
 let isAdmin ="true";
 alert(name);
 alert(newUser);
