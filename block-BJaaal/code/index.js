@@ -36,7 +36,8 @@ const taxPercent = 10;
   - Above message should be in two lines
 */
 
-alert(`The total amount is ${amount} \nthe tax amount is ${(amount * taxPercent) /100}`);
+alert(`The total amount is ${amount} 
+the tax amount is ${(amount * taxPercent) /100}`);
 
 /* Use double quote and escape character:
   - Alert a message saying `The total amount is [amount]
@@ -45,4 +46,4 @@ alert(`The total amount is ${amount} \nthe tax amount is ${(amount * taxPercent)
   - Above message should be in two lines
 */
 
-alert("The total amount is" + amount + "\nthe tax amount is" + amount * taxPercent / 100);
+alert("The total amount is" + amount + "\n the tax amount is" + amount * taxPercent / 100);
