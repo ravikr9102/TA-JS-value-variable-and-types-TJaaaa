@@ -21,7 +21,7 @@ let language = "javascript";
 alert("I am learning" + " " + language);
 alert(`The value of num1 is ${num1}
  and the value of num2 is ${num2}`);
- alert(`the sum of ${num1} and ${num2} is ${num1+num2}`);
+ alert(`the sum of [num1] and [num2] is ${num1 + num2}`)
 
 /*
 2. Do the following using `alert`, `prompt` and `confirm` and `console`
@@ -64,8 +64,8 @@ profession ${userProfession}
   - Log using console.log [numA * numB]
 */
 
-let numA = +prompt("Enter Number");
-let numB = +prompt("Enter Number");
+let numA = Number(prompt("Enter first number!"));
+let numB = Number(prompt("Enter second number!"));
 alert(numA+numB);
 alert(numA-numB);
 alert(numA*numB);
