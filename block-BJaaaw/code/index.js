@@ -7,26 +7,26 @@
   - `if` the number is odd print the message "number is odd"
 */
 
-// let number = +prompt("Enter a number");
+let num = +prompt("Enter a number");
 
-// if ( number % 2 == 0 ) {
-//   console.log ("number is even");
-// }
-// else {
-//   console.log ("number is odd");
-// }
+if (num % 2 === 0) {
+  console.log("number is even");
+} else {
+  console.log("number is odd");
+}
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
 
-// let numA = +prompt("Enter number1");
-// let numB = +prompt("Enter number2");
+let numA = prompt("Enter number1");
+let numB = prompt("Enter number2");
 
-// if ( numA > numB) {
-//     console.log ("max value is numA");
-// }
-// else {
-//   console.log ("max value is numB");
-// }
+if (numA > numB) {
+  console.log("max value is numA");
+} else {
+  console.log("max value is numB");
+}
 // 3. Convert the above code using`?` terniary operator
+
+numA > numB ? alert(` max value is ${numA}`) : alert(`max value is ${numB}`);
 
 /*
 4. Write a program that asks the user for the house name and check the following conditions:
@@ -38,13 +38,11 @@
 
 let house = prompt("enter house name");
 
-if ( house == "stark") {
-  console.log ("winter is coming");
-}
-else if ( house=="lannister") {
-  console.log ("A lannister always pays his debt");
-}
-else {
+if (house === "stark") {
+  console.log("winter is coming");
+} else if (house === "lannister") {
+  console.log("A lannister always pays his debt");
+} else {
   console.log("All men must die");
 }
 
@@ -54,44 +52,47 @@ else {
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
 
-let number = +prompt("Enter a month number from 1 - 12");
+let monthname = prompt("Enter the  name of the month");
 
-switch (number) {
-  case 1:
-    alert("January");
+switch (monthname) {
+  case "January":
+    alert("The number of days are 31");
     break;
-  case 2:
-    alert("Febrauary");
+  case "January":
+    alert("The number of days are 28");
     break;
-  case 3:
-    alert("March");
+  case "february":
+    alert("The number of days are 30");
     break;
-  case 4:
-    alert("April");
+  case "march":
+    alert("The number of days are 31");
     break;
-  case 5:
-    alert("April");
+  case "april":
+    alert("The number of days are 30");
     break;
-  case 6:
-    alert("April");
+  case "may":
+    alert("The number of days are 30");
     break;
-  case 7:
-    alert("April");
+  case "June":
+    alert("The number of days are 31");
     break;
-  case 8:
-    alert("April");
+  case "July":
+    alert("The number of days are 31");
     break;
-  case 9:
-    alert("April");
+  case "august":
+    alert("The number of days are 31");
     break;
-  case 10:
-    alert("April");
+  case "september":
+    alert("The number of days are 31");
     break;
-  case 11:
-    alert("April");
+  case "october":
+    alert("The number of days are 31");
     break;
-  case 12:
-    alert("April");
+  case "number":
+    alert("The number of days are 31");
+    break;
+  case "december":
+    alert("The number of days are 31");
     break;
   default:
     alert("Enter a valid input");
@@ -104,21 +105,30 @@ switch (number) {
   - `Salary > 50000` tax is 30 %
 */
 
-let salary = +prompt("Enter Salery");
-let tax,amount;
+let salary = prompt("Enter your Salery");
 
-if ( salary <= 20000) {
-   tax = .1*salary;
-   amount = salary - tax;
+switch (true) {
+  case salary <= 20000:
+    let tax = (salary * 10) / 100;
+    alert(`Your in-hand amount ${salary-tax}`);
+    break;
+    default: 
+    alert("Not a valid input")
+    case salary <= 40000:
+    let discount = (salary * 20) / 100;
+    alert(`Your in-hand amount ${salary-discount}`);
+    break;
+    default: 
+    alert("Not a valid input")
+    case salary > 50000:
+    let rupees = (salary * 30) / 100;
+    alert(`Your in-hand amount ${salary-rupees}`);
+    break;
+    default: 
+    alert("Not a valid input")
 }
-else if ( salary <= 40000) {
-   tax = .2*salary;
-   amount = salary - tax;
-}
-else if ( salary > 50000) {
-  tax = .3*salary;
-  amount = salary - tax;
-}
+
+
 
 //  if..else vs switch
 
@@ -135,19 +145,15 @@ Implement the condition give below using`if..else` and`switch` statement.
 
 let marks = +prompt("Enter your marks");
 
-if (marks>100) {
-  alert ("Marks can't be greater than 100");
-}
-else if (marks > 80 && marks < 100) {
+if (marks > 100) {
+  alert("Marks can't be greater than 100");
+} else if (marks > 80 && marks < 100) {
   alert("Grade A");
-}
-else if (marks > 50 && marks < 80) {
+} else if (marks > 50 && marks < 80) {
   alert("Grade B");
-}
-else if (marks > 30 && marks < 50) {
+} else if (marks > 30 && marks < 50) {
   alert("Grade C");
-}
-else if (marks > 0) {
+} else if (marks > 0) {
   alert("Grade D");
 }
 let score = +prompt("enter your score");
